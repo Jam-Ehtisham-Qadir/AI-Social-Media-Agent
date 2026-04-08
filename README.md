@@ -1,6 +1,3 @@
-# ✦ AI Social Media Agent
-
-
 ---
 title: AI Social Media Agent
 emoji: 📱
