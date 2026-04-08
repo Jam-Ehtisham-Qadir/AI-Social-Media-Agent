@@ -1,5 +1,15 @@
 # ✦ AI Social Media Agent
 
+
+---
+title: AI Social Media Agent
+emoji: 📱
+colorFrom: pink
+colorTo: purple
+sdk: docker
+pinned: false
+---
+
 A production-ready AI agent that researches any topic on the web and generates platform-perfect social media posts for LinkedIn, Twitter/X, and Instagram — with optional image and video analysis via GPT-4o Vision.
 
 ![AI Agent](https://img.shields.io/badge/AI-Social%20Media%20Agent-f472b6?style=for-the-badge)
