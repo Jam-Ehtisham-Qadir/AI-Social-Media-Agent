@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from dotenv import load_dotenv
 import os
@@ -10,7 +10,7 @@ from openai import OpenAI
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', static_url_path='')
 CORS(app)
 
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
@@ -257,6 +257,13 @@ def generate():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve_frontend(path):
+    if path and os.path.exists(os.path.join(app.static_folder, path)):
+        return send_from_directory(app.static_folder, path)
+    return send_from_directory(app.static_folder, 'index.html')
 
 
 if __name__ == '__main__':

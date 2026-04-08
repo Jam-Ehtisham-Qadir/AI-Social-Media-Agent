@@ -39,7 +39,7 @@ export default function App() {
       formData.append('topic', topic)
       if (mediaFile) formData.append('file', mediaFile)
 
-      const response = await fetch('http://127.0.0.1:5000/generate', {
+      const response = await fetch('/generate', {
         method: 'POST',
         body: formData,
       })
