@@ -7,6 +7,12 @@ sdk: docker
 pinned: false
 ---
 
+## 🌐 Live Demo
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20it%20Now-brightgreen?style=for-the-badge&logo=googlechrome)](https://jamehtisham-ai-social-media-agent.hf.space)
+
+> No login required — just enter a topic and generate posts instantly.
+
 A production-ready AI agent that researches any topic on the web and generates platform-perfect social media posts for LinkedIn, Twitter/X, and Instagram — with optional image and video analysis via GPT-4o Vision.
 
 ![AI Agent](https://img.shields.io/badge/AI-Social%20Media%20Agent-f472b6?style=for-the-badge)
